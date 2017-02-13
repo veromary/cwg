@@ -113,7 +113,7 @@ int cw_print_latex(crossword cw){
   printf("\\fancyhf{}\n");
   printf("\\renewcommand{\\headrulewidth}{0pt}\n");
   printf("\\renewcommand{\\footrulewidth}{0pt}\n");
-  printf("\\fancyfoot[C]{A New Book of Old Hymns --- 2016 --- www.brandt.id.au}\n");
+  printf("\\fancyfoot[C]{A New Book of Old Hymns --- 2017 --- www.brandt.id.au}\n");
   printf("\\libertine\n");
   printf("\\renewcommand\\PuzzleClueFont{\\rm\\normalsize}\n");
   printf("\\noindent\\begin{rotate}{0}\n");
