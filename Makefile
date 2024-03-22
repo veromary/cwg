@@ -23,7 +23,7 @@
 FLAGS = -Wall -Wextra -Werror
 GCC = gcc $(FLAGS)
 INSTALL_DIR = /usr/local/bin
-LATEX_DIR = /usr/share/texmf/tex/latex
+LATEX_DIR = /home/veronica/.TinyTex/texmf-local/tex
 
 all: cwg clean
 

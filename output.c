@@ -106,23 +106,15 @@ int cw_print_latex(crossword cw){
   printf("\\usepackage{cwpuzzle}\n");
   printf("\\usepackage{libertine}\n");
   printf("\\usepackage[cm]{fullpage}\n");
-  printf("\\usepackage{rotating}\n");
   printf("\\usepackage{fancyhdr}\n");
   printf("\\begin{document}\n");
   printf("\\pagestyle{fancy}\n");
   printf("\\fancyhf{}\n");
   printf("\\renewcommand{\\headrulewidth}{0pt}\n");
   printf("\\renewcommand{\\footrulewidth}{0pt}\n");
-  printf("\\fancyfoot[C]{A New Book of Old Hymns --- 2018 --- www.brandt.id.au}\n");
+  printf("\\fancyfoot[C]{A New Book of Old Hymns --- \\the\\year{} --- www.brandt.id.au}\n");
   printf("\\libertine\n");
   printf("\\renewcommand\\PuzzleClueFont{\\rm\\normalsize}\n");
-  printf("\\noindent\\begin{rotate}{0}\n");
-  printf("\\small\n");
-  printf("\\end{rotate}\n");
-  printf("\\hfill\n");
-  printf("\\begin{rotate}{270}\n");
-  printf("\\small\n");
-  printf("\\end{rotate}\n");
   printf("\\begin{center}\n");
   printf("  \\huge{%s}\n", "Crossword Puzzle:"); // TODO allow custom title
   printf("\\end{center}\n");
@@ -153,10 +145,6 @@ int cw_print_latex(crossword cw){
     printf(".\n");
   }
   printf("\\end{Puzzle}\n");
-  printf("\\begin{rotate}{90}\n");
-  printf("\\small \n");
-  printf("\\end{rotate}\n");
-  printf("\\hspace{-10pt}\n");
 
   // Print the clues
   printf("\\begin{PuzzleClues}{\\textbf{Across:}}\n");
